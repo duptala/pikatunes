@@ -15,11 +15,11 @@
     <div class="title">PikaTunes</div>
     <div class="player">
       <!--ICONS-->
-      <img class="heart" src="images/heart.png" alt="" />
-      <img class="jalebi" src="images/jalebi-baby.png" alt="" />
-      <img class="pikachu" src="images/pikachu.png" alt="" />
-      <img class="minnie" src="images/minnie.png" alt="" />
-      <img class="porcupine" src="images/hedgehog.png" alt="" />
+      <img class="heart" src="heart.png" alt="" />
+      <img class="jalebi" src="jalebi-baby.png" alt="" />
+      <img class="pikachu" src="pikachu.png" alt="" />
+      <img class="minnie" src="minnie.png" alt="" />
+      <img class="porcupine" src="hedgehog.png" alt="" />
 
       <div class="record">
         <div class="label"></div>
@@ -41,9 +41,9 @@
       </div>
     </div>
     <div class="table">
-      <img src="images/nutella.png" alt="" class="nutella" />
-      <img src="images/blueberry.png" alt="" class="blueberry" />
-      <img src="images/twilight.png" alt="" class="twilight" />
+      <img src="nutella.png" alt="" class="nutella" />
+      <img src="blueberry.png" alt="" class="blueberry" />
+      <img src="twilight.png" alt="" class="twilight" />
       <button class="record-select-btn">
         <div class="change-song">
           click disc to change song <span class="smiley">☺️</span>
@@ -71,7 +71,7 @@ To do list:
     <audio
       loop
       class="current-song"
-      src="music/apna-bane-le.mp3"
+      src="apna-bane-le.mp3"
       preload="auto"
     ></audio>
 
@@ -127,8 +127,8 @@ To do list:
 
       songChange.addEventListener("click", () => {
         console.log(`${songArr[count]} loaded!`);
-        song.src = `../music/${songArr[count]}.mp3`;
-        labelElement.style.backgroundImage = `url("music-covers/${songArr[count]}.jpg")`;
+        song.src = `${songArr[count]}.mp3`;
+        labelElement.style.backgroundImage = `url("${songArr[count]}.jpg")`;
         if (count < songArr.length - 1) {
           // only if the length is smaller than length of array
           count++;
