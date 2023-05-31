@@ -153,6 +153,16 @@ To do list:
         btn.classList.remove("blink-fx");
         state = false;
       });
+       function checkPassword(event) {
+        event.preventDefault();
+        var password = document.getElementById("password-input").value;
+        if (password === "porcupine") {
+          document.getElementById("password-form").style.display = "none";
+          document.getElementById("content").style.display = "block";
+        } else {
+          alert("Incorrect password. Please try again.");
+        }
+      }
     </script>
   </body>
 </html>
