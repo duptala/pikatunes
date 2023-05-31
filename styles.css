@@ -18,6 +18,52 @@ html {
     justify-content: center;
 }
 
+#password-form {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #390153;
+    z-index: 9999;
+  }
+  
+  #password-form h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ebebeb;
+    font-family: monospace;
+  }
+  
+  #password-input {
+    width: 250px;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+  }
+  
+  button[type="submit"] {
+    width: 150px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #ff57ff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #cb1aa7;
+  }
+
 
 
 .title {
